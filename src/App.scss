@@ -1,0 +1,488 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+// Colors
+$primary: rgb(34, 34, 34);
+$secondary: #113E21;
+$accent1: #B38B59;
+$accent2: #F0F0F0;
+$accent3: #FEFEFE;
+
+$purple: purple;
+$white: #fff;
+$blue: blue;
+$green: green;
+$silver: silver;
+$silver-light: rgb(235, 235, 235);
+$purple-light: rgb(189, 0, 189);
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #eaeaea;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Landing
+.landing {
+  background-image: url('../src/images/a.jpeg');
+  height: 80vh;
+  background-size: cover;
+
+  padding: 3rem;
+
+  /* .bg-img {
+  object-fit: cover;
+  width: 100vw;
+  height: 80vh;
+} */
+
+  .hero-title {
+    color: #eaeaea;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.about,
+.contact {
+  padding: 3rem;
+  margin: 0 0 4em 0;
+
+  .title {
+    text-align: center;
+    margin: 2em 0;
+  }
+}
+
+// Form inputs
+.input-div {
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    padding: 10px;
+    color: $accent1;
+    min-width: 50px;
+    text-align: center;
+  }
+
+  .pwd-toggle {
+    position: absolute;
+    padding: 10px;
+    color: $accent1;
+    min-width: 50px;
+    text-align: center;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+// Sign in
+.signin {
+  //border: 1px solid $accent2;
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 4% 0;
+
+  .signin-title {
+    font-size: 1.5em;
+    margin: 0 0 3% 0;
+  }
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+
+  .signin-input {
+    width: 400px;
+    height: 50px;
+    color: $secondary;
+    outline: none;
+    border: 1px solid $silver;
+    padding-left: 50px;
+    margin: 0 0 2% 0;
+
+  }
+
+  .signin-input:focus {
+    border: 1px solid $accent1;
+
+    &::placeholder {
+      color: $accent1;
+    }
+  }
+
+  .signin-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 0;
+    border-color: $secondary;
+    color: $secondary;
+    margin: 0 auto;
+  }
+
+  .signin-btn:hover {
+    color: $accent1;
+    border-color: $accent1;
+  }
+
+  .signup-link {
+    color: $secondary;
+    background-color: transparent;
+    border: none;
+    font-size: .9em;
+    text-decoration: underline;
+    margin: 2% auto 0 auto;
+
+  }
+
+  .signup-link:hover {
+    color: $accent1
+  }
+
+}
+
+// Sign up
+.signup {
+  //border: 1px solid $accent2;
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 4% 0;
+
+  .signup-title {
+    font-size: 1.5em;
+    margin: 0 0 3% 0;
+  }
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+
+  .signup-input {
+    width: 400px;
+    height: 50px;
+    color: $secondary;
+    outline: none;
+    border: 1px solid $silver;
+    padding-left: 50px;
+    margin: 0 0 2% 0;
+
+  }
+
+  .signup-input:focus {
+    border: 1px solid $accent1;
+
+    &::placeholder {
+      color: $accent1;
+    }
+  }
+
+  .signup-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 0;
+    border-color: $secondary;
+    color: $secondary;
+    margin: 0 auto;
+  }
+
+  .signup-btn:hover {
+    color: $accent1;
+    border-color: $accent1;
+  }
+
+  .signin-link {
+    color: $secondary;
+    background-color: transparent;
+    border: none;
+    font-size: .9em;
+    text-decoration: underline;
+    //width: 30%;
+    margin: 2% auto 0 auto;
+  }
+
+  .signin-link:hover {
+    color: $accent1
+  }
+
+}
+
+// 404 Page
+.page404 {
+  height: 60vh;
+  text-align: center;
+  padding: 5% 0 0 0;
+
+  .title {
+    font-size: 3em;
+  }
+
+  .text {
+    color: $accent1;
+    margin: 2% 0 0 0;
+    font-size: 1.5em;
+  }
+
+  .back-btn {
+    color: $secondary;
+    border-color: $secondary;
+    margin: 5% 0 0 0;
+  }
+
+  .back-btn:hover {
+    color: $accent1;
+    border-color: $accent1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .signin-form {
+    width: 100%;
+
+    .input-div {
+      width: 100%;
+      margin: 5% 0;
+    }
+
+    .signin-input {
+      width: 100%;
+    }
+
+    .signin-btn {
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
+  }
+
+  .signup-form {
+    width: 100%;
+
+    .input-div {
+      width: 100%;
+      margin: 5% 0;
+    }
+
+    .signup-input {
+      width: 100%;
+    }
+
+    .signup-btn {
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
+  }
+}
+
+.contact-form {
+  width: 100;
+
+  .input-div {
+    width: 100%;
+  }
+
+  .contact-input {
+    width: 100%;
+  }
+  .contact-btn {
+    margin-bottom: 2em;
+  }
+}
+
+// Footer
+.footer {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: smaller;
+}
+
+// Contact
+
+.contact {
+  height: 80vh;
+
+  //margin: 4rem 0 0 0;
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-input {
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid $silver;
+    margin: 0 0 5% 0;
+  }
+
+  .contact-input:focus {
+    border-color: $accent1;
+
+    &::placeholder {
+      color: $accent1;
+    }
+  }
+
+  .contact-textarea {
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+  }
+
+  .contact-map {
+    position: relative;
+    padding: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .contact-geoloc {
+      color: $secondary;
+      font-size: 2em;
+      position: absolute;
+      left: 20%;
+      top: 20%;
+    }
+
+  }
+}
+
+.contact-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 0;
+  border-color: $secondary;
+  color: $secondary;
+}
+
+.contact-btn:hover {
+  color: $accent1;
+  border-color: $accent1;
+}
+
+// 404 Page
+.page404 {
+  height: 60vh;
+  text-align: center;
+  padding: 5% 0 0 0;
+
+  .title {
+    font-size: 3em;
+  }
+
+  .text {
+    color: $accent1;
+    margin: 2% 0 0 0;
+    font-size: 1.5em;
+  }
+
+  .back-btn {
+    color: $secondary;
+    border-color: $secondary;
+    margin: 5% 0 0 0;
+  }
+
+  .back-btn:hover {
+    color: $accent1;
+    border-color: $accent1;
+  }
+}
+
+
+// Home
+.home {
+  margin-top: 4rem;
+  padding: 0 4rem;
+}
+
+// Card
+.card {
+  //width: 250px;
+  //height: 300px;
+  border: 1px solid $accent2;
+  //margin: 1% 1%;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgb(185, 185, 185, 0.1);
+
+  .card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+  }
+
+  .card-details {
+    padding: 2% 0 2% 8%;
+    margin: 2% 0;
+
+    .card-price {
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+  }
+
+  .card-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .card-btn {
+    background-color: none;
+    color: $secondary;
+    border-color: $secondary;
+    font-size: .8em;
+  }
+
+  .card-btn:hover {
+    background-color: $secondary;
+    color: $accent2;
+  }
+
+  &:hover {
+    box-shadow: 10px 10px 5px rgb(185, 185, 185, 0.3);
+  }
+}
