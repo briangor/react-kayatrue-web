@@ -49,6 +49,28 @@
   font-weight: 700;
 }
 
+.article1, .article2 {
+  height: 50vh;
+  margin: 2em 0;
+}
+
+.landing-house {
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  background-color: #B38B59;
+  text-align: center;
+  margin: 6em 0;
+  padding: 2em 0;
+}
+
+.article-title {
+  text-align: center;
+  padding: 2em 0;
+}
+
 .about,
 .contact {
   padding: 3rem;
