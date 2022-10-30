@@ -1,7 +1,4 @@
-.App {
-  text-align: center;
-}
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,9 +9,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  background-color: #282c34;
+  background-color: #eaeaea;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +32,361 @@
     transform: rotate(360deg);
   }
 }
+.landing {
+  background-image: url("../src/images/a.jpeg");
+  height: 80vh;
+  background-size: cover;
+  padding: 3rem;
+  /* .bg-img {
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+  } */
+}
+.landing .hero-title {
+  color: #eaeaea;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.about,
+.contact {
+  padding: 3rem;
+  margin: 0 0 4em 0;
+}
+.about .title,
+.contact .title {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.input-div {
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.input-div .icon {
+  position: absolute;
+  padding: 10px;
+  color: #B38B59;
+  min-width: 50px;
+  text-align: center;
+}
+.input-div .pwd-toggle {
+  position: absolute;
+  padding: 10px;
+  color: #B38B59;
+  min-width: 50px;
+  text-align: center;
+  right: 0;
+  cursor: pointer;
+}
+
+.signin {
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 4% 0;
+}
+.signin .signin-title {
+  font-size: 1.5em;
+  margin: 0 0 3% 0;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+.signin-form .signin-input {
+  width: 400px;
+  height: 50px;
+  color: #113E21;
+  outline: none;
+  border: 1px solid silver;
+  padding-left: 50px;
+  margin: 0 0 2% 0;
+}
+.signin-form .signin-input:focus {
+  border: 1px solid #B38B59;
+}
+.signin-form .signin-input:focus::placeholder {
+  color: #B38B59;
+}
+.signin-form .signin-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 0;
+  border-color: #113E21;
+  color: #113E21;
+  margin: 0 auto;
+}
+.signin-form .signin-btn:hover {
+  color: #B38B59;
+  border-color: #B38B59;
+}
+.signin-form .signup-link {
+  color: #113E21;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9em;
+  text-decoration: underline;
+  margin: 2% auto 0 auto;
+}
+.signin-form .signup-link:hover {
+  color: #B38B59;
+}
+
+.signup {
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 4% 0;
+}
+.signup .signup-title {
+  font-size: 1.5em;
+  margin: 0 0 3% 0;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+.signup-form .signup-input {
+  width: 400px;
+  height: 50px;
+  color: #113E21;
+  outline: none;
+  border: 1px solid silver;
+  padding-left: 50px;
+  margin: 0 0 2% 0;
+}
+.signup-form .signup-input:focus {
+  border: 1px solid #B38B59;
+}
+.signup-form .signup-input:focus::placeholder {
+  color: #B38B59;
+}
+.signup-form .signup-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 0;
+  border-color: #113E21;
+  color: #113E21;
+  margin: 0 auto;
+}
+.signup-form .signup-btn:hover {
+  color: #B38B59;
+  border-color: #B38B59;
+}
+.signup-form .signin-link {
+  color: #113E21;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9em;
+  text-decoration: underline;
+  margin: 2% auto 0 auto;
+}
+.signup-form .signin-link:hover {
+  color: #B38B59;
+}
+
+.page404 {
+  height: 60vh;
+  text-align: center;
+  padding: 5% 0 0 0;
+}
+.page404 .title {
+  font-size: 3em;
+}
+.page404 .text {
+  color: #B38B59;
+  margin: 2% 0 0 0;
+  font-size: 1.5em;
+}
+.page404 .back-btn {
+  color: #113E21;
+  border-color: #113E21;
+  margin: 5% 0 0 0;
+}
+.page404 .back-btn:hover {
+  color: #B38B59;
+  border-color: #B38B59;
+}
+
+@media only screen and (max-width: 600px) {
+  .signin-form {
+    width: 100%;
+  }
+  .signin-form .input-div {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .signin-form .signin-input {
+    width: 100%;
+  }
+  .signin-form .signin-btn {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  .signup-form {
+    width: 100%;
+  }
+  .signup-form .input-div {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .signup-form .signup-input {
+    width: 100%;
+  }
+  .signup-form .signup-btn {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+}
+.contact-form {
+  width: 100;
+}
+.contact-form .input-div {
+  width: 100%;
+}
+.contact-form .contact-input {
+  width: 100%;
+}
+.contact-form .contact-btn {
+  margin-bottom: 2em;
+}
+
+.footer {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: smaller;
+}
+
+.contact {
+  height: 80vh;
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-input {
+  width: 400px;
+  height: 50px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid silver;
+  margin: 0 0 5% 0;
+}
+.contact .contact-input:focus {
+  border-color: #B38B59;
+}
+.contact .contact-input:focus::placeholder {
+  color: #B38B59;
+}
+.contact .contact-textarea {
+  height: 150px;
+  padding-top: 10px;
+  resize: none;
+}
+.contact .contact-map {
+  position: relative;
+  padding: 0;
+}
+.contact .contact-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact .contact-map .contact-geoloc {
+  color: #113E21;
+  font-size: 2em;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+.contact-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 0;
+  border-color: #113E21;
+  color: #113E21;
+}
+
+.contact-btn:hover {
+  color: #B38B59;
+  border-color: #B38B59;
+}
+
+.page404 {
+  height: 60vh;
+  text-align: center;
+  padding: 5% 0 0 0;
+}
+.page404 .title {
+  font-size: 3em;
+}
+.page404 .text {
+  color: #B38B59;
+  margin: 2% 0 0 0;
+  font-size: 1.5em;
+}
+.page404 .back-btn {
+  color: #113E21;
+  border-color: #113E21;
+  margin: 5% 0 0 0;
+}
+.page404 .back-btn:hover {
+  color: #B38B59;
+  border-color: #B38B59;
+}
+
+.home {
+  margin-top: 4rem;
+  padding: 0 4rem;
+}
+
+.card {
+  border: 1px solid #F0F0F0;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(185, 185, 185, 0.1);
+}
+.card .card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+.card .card-details {
+  padding: 2% 0 2% 8%;
+  margin: 2% 0;
+}
+.card .card-details .card-price {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.card .card-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+}
+.card .card-btn {
+  background-color: none;
+  color: #113E21;
+  border-color: #113E21;
+  font-size: 0.8em;
+}
+.card .card-btn:hover {
+  background-color: #113E21;
+  color: #F0F0F0;
+}
+.card:hover {
+  box-shadow: 10px 10px 5px rgba(185, 185, 185, 0.3);
+}
+
+/*# sourceMappingURL=App.css.map */
