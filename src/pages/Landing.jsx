@@ -1,6 +1,6 @@
-import bg from '../images/a.jpeg'
+//import bg from '../images/a.jpeg'
 import h2 from '../images/houses/h2.jpeg'
-import h3 from '../images/houses/h3.jpeg'
+//import h3 from '../images/houses/h3.jpeg'
 
 let Landing = () => {
     return (
