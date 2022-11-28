@@ -14,9 +14,11 @@ import Home from "./pages/Home";
 import Page404 from "./pages/Page404";
 
 function App() {
+  let signedIn = false;
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar signedIn={signedIn}/>
       <Routes>
         <Route path='' element={<Landing />} />
         <Route path='/about' element={<About />} />
