@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-let Navbar = () => {
+let Navbar = ({signedIn}) => {
     return (
         <nav className="navbar navbar-light navbar-expand-md fixed-top bg-light">
             <div className="container">
@@ -20,6 +20,7 @@ let Navbar = () => {
                     </ul>
                     <ul className="nav navbar-nav ms-auto w-100 justify-content-end">
                         <li className="nav-item"><Link to='/signin' className="btn btn-outline-secondary mx-2">Sign in</Link></li>
+                        {signedIn && <li className="nav-item"><Link to='/signin' className="btn btn-outline-secondary mx-2">Sign out</Link></li>}
                         <li className="nav-item"><Link to='/signup' className="btn btn-dark">Get started <i className="bi bi-arrow-right-circle"></i></Link></li>
                     </ul>
                 </div>
