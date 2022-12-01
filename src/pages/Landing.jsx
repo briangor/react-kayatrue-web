@@ -1,4 +1,5 @@
 //import bg from '../images/a.jpeg'
+import LandingSearch from '../components/LandingSearch';
 import h2 from '../images/houses/h2.jpeg'
 //import h3 from '../images/houses/h3.jpeg'
 
@@ -10,6 +11,7 @@ let Landing = () => {
 
             <div className="row">
                 <p className='hero-title'>Search for your next home with ease</p>
+                <LandingSearch />
             </div>
         </div>
         <div className='article-title'><h5>Select your location</h5></div>
